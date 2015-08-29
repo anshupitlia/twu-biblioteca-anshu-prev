@@ -46,6 +46,8 @@
                 <pathelement location="out"/>
             </classpath>
             <test name = "com.twu.biblioteca.ExampleTest" todir="."/>
+            <test name = "com.twu.biblioteca.LibraryTest" todir="."/>
+            <test name = "com.twu.biblioteca.BookTest" todir="."/>
         </junit>
     </target>
 </project>
