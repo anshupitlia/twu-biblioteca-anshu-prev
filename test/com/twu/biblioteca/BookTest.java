@@ -13,4 +13,12 @@ public class BookTest {
 
         assertEquals(true, book.checkoutBook());
     }
+
+    @Test
+    public void shouldNotBeAbleToGetCheckedOutIfItIsAlreadyCheckedOut() {
+        Book book =  new Book("Anna Karenina", "Leo Tolstoy", (short) 1878);
+        book.checkoutBook();
+
+        assertEquals(false, book.checkoutBook());
+    }
 }

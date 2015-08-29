@@ -14,6 +14,10 @@ public class Book {
     }
 
     public boolean checkoutBook() {
-        return true;
+        if (this.isAvailable == true){
+            this.isAvailable = false;
+            return true;
+        }
+        return false;
     }
 }
